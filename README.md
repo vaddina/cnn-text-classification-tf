@@ -51,7 +51,7 @@ cool  500
 
 * Put files containing positive examples *`pos.txt`* & negative examples separately *`neg.txt`* in `data` folder.
 * Put word embeddings & the vocab file in `model` folder.
-* **Adjust the model hyperparams first: [here](<insert the lines>)**
+* **Adjust the model hyperparams first: [here](https://github.com/vaddina/cnn-text-classification-tf/blob/experiments/train.py#L47-L62)**
 
 then run:
 ```
