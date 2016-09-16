@@ -8,7 +8,7 @@ Forked from [here](https://github.com/dennybritz/cnn-text-classification-tf), ba
 - Gensim
 - TensorFlow > 0.8
 
-This modified version has a few *important* changes:
+**This modified version has a few *important* changes**:
 
 * **Pre-trained Word Embeddings**
   * Any word embeddings supported by gensim **AND** a separate vocabulary file (with frequency counts).
