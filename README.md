@@ -34,7 +34,7 @@ cool  500
 &ensp; &ensp; &ensp; &ensp; &ensp; Tensorflow's built-in *`VocabularyProcessor`* can also be used but it won't detect emojis 😭😭 which I felt were important for Sentiment Analysis. If you don't care about them, you can opt for the latter method (*not implemented*). *Also note* that inorder to exploit the former technique, embeddings for the emojis should also be given by *Word2Vec / Glove etc.* models.
 
 * **Batch Processing of input data**
-  * Data is stored in HDFS file system. So easy and efficient to retrieve in batches.
+  * Data is stored in HDF5 file system. So easy and efficient to retrieve in batches.
 
 * **Added *Softmax* to output class probabilities while prediction**
 
@@ -42,7 +42,7 @@ cool  500
 # ToDo:
 
 * [Improve](data_helpers.py) input handling.
-  * Handles (reasonably) large input size (tested till `2 Million` examples) well but first loads them into memory to transform and store them (numerically) in HDFS. Better not to do that.
+  * Handles (reasonably) large input size (tested till `2 Million` examples) well but first loads them into memory to transform and store them (numerically) in HDF5. Better not to do that.
 * Testing the trained Tensorflow model assumes *cleaned (preprocessed)* input for testing.
   * Do the cleaning before feeding it to the model for classification
 
